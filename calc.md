@@ -1,0 +1,3 @@
+Sukurti svetainę, kurioje būtų galima pasirinkti kokią nors konkrečią, taisyklingąją figūrą ir atsidarius naujajeme lange, įvedus prašomas reikšmes, kompiuteris apskaičiuotų figūros pavirsiaus plota arba tūrį. 
+Bet padaryti taip, kad vieno mygtuko paspaudimu, apskaičiuotų tik, pavyzdžiui (paviršiaus plotą). Norint apskaičiuoti kitą reikšmę, pavyzdiui (tūrį), reikia padaryti atskirą mygtuką, kuris pakeistų pirmojo mygtuko funkciją. Ir pakeitus funkciją, po pirmojo mygtuko paspaudimo, kompiuteris jau skaičiuotų nebe paviršiaus plotą o tūrį. 
+Taigi iš viso paruošti du mygtukus. Pirmasis skaičiuotų paviršiaus plotą ir tūrį. O anrasis parinktų, kokią funkciją atliks pirmasis mygtukas. 
