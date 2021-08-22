@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "ND7": "live-server --port=3007",
+    "calc": "live-server --port=3222",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
