@@ -16,35 +16,38 @@ function changeClick() {
     if (skaicius % 2 === 0) {
         console.log('vienas');
         second.innerText = 'paviršiaus plotas';
-        input.value = '';
+        // input.value = '';
         ats.innerText = 'Ats.:';
     } else {
         console.log('du');
         second.innerText = 'tūris';
-        input.value = '';
+        // input.value = '';
         ats.innerText = 'Ats.:';
     }
     
 }
 
-function secondCick() {
-    if (skaicius % 2 === 0) {
+function secondClick() {
+    if (skaicius % 2 === 0 && !(input.value <= 0)) {
         console.log('vienas');
         second.innerText = 'paviršiaus plotas';
-        ats.innerText = (4 * 3.14) * (parseInt(input.value) * parseInt(input.value));
-    } else if (skaicius % 2 !== 0) {
+        ats.innerText = "Paviršiaus plotas: " + (4 * 3.14) * (parseInt(input.value) * parseInt(input.value));
+    } else if (skaicius % 2 !== 0 && !(input.value <= 0)) {
         console.log('du');
         second.innerText = 'tūris';
-        ats.innerText = ((4 * 3.14 * (parseInt(input.value) * parseInt(input.value) * parseInt(input.value))) / 3);
+        ats.innerText = "Tūris: " + ((4 * 3.14 * (parseInt(input.value) * parseInt(input.value) * parseInt(input.value))) / 3);
+    } else if (input.value === '') {
+        alert("Privalu nurodyti sferos spindulį");
+    } else if ((input.value <= 0)) {
+        alert("Sferos spindulys negali būti nei nulis, nei neigiamas skaičius");
     }
-
 }
 
 function moreClick() {
-    alert("More coming soon...")
+    alert("More coming soon...");
 }
 
 
 changeDOM.addEventListener('click', changeClick);
-secondDOM.addEventListener('click', secondCick);
+secondDOM.addEventListener('click', secondClick);
 more.addEventListener('click', moreClick);
