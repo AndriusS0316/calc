@@ -50,6 +50,19 @@ body {
     border-radius: 10px;
     background-color: lightgreen;
 }
+.form5 {
+    padding: 15px 40px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 41px;
+    border-radius: 10px;
+    background-color: lightseagreen;
+    color: darkblue;
+}
 .turis {
     padding: 15px 100px;
     display: flex;

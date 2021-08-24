@@ -34,8 +34,7 @@ function secondCick() {
     } else if (skaicius % 2 !== 0) {
         console.log('du');
         second.innerText = 'tūris';
-        let kubas = (parseInt(input.value) * parseInt(input.value) * parseInt(input.value));
-        ats.innerText = ((4 * 3.14 * kubas) / 3);
+        ats.innerText = ((4 * 3.14 * (parseInt(input.value) * parseInt(input.value) * parseInt(input.value))) / 3);
     }
 
 }
