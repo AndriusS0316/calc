@@ -1,0 +1,80 @@
+body {
+    background-color: #eee;
+}
+
+.form1 {
+    padding: 15px 100px;
+    display: flex;
+    gap: 80px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 23px;
+    border-radius: 10px;
+}
+::placeholder {
+    font-size: 25px;
+}
+.form2 {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form3 {
+    padding: 15px 40px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 41px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #fff;
+}
+.form4 {
+    padding: 15px 40px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 41px;
+    border-radius: 10px;
+    background-color: lightgreen;
+}
+
+
+
+
+
+
+button {
+    padding: 10px 30px;
+    font-size: 50px;
+    line-height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #0002;
+}
+.minus {
+    background-color: red;
+    color: #fff;
+}
+.plus {
+    background-color: green;
+    color: #fff;
+}
+.number {
+    padding: 10px 30px;
+    font-size: 50px;
+    line-height: 30px;
+}

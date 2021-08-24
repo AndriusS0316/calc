@@ -1,31 +1,36 @@
-// septinta uzduotis
+// calc uzduotis
 
-let rezultatas = 0;
+let skaicius = 3;
 
-const minusDOM = document.querySelector(".minus");
-const plusDOM = document.querySelector(".plus");
-const numberDOM = document.querySelector(".number");
-const resetDOM = document.querySelector(".reset");
+const input = document.querySelector(".form1")
+const changeDOM = document.querySelector(".change");
+const secondDOM = document.querySelector(".second");
+const ats = document.querySelector(".number");
+const second = document.querySelector(".second");
 
-function minusClick() {
-    rezultatas = rezultatas - 1;
-    numberDOM.innerText = rezultatas;
-
-    // galima buvo rasyti = numberDOM.innerText = --rezultatas
+function changeClick() {
+    if (skaicius % 2 === 0) {
+        console.log('vienas');
+        second.innerText = 'paviršiaus plotas';
+    } else {
+        console.log('du');
+        second.innerText = 'tūris';
+    }
+    skaicius = skaicius + 1;
 }
 
-function plusCick() {
-    rezultatas = rezultatas + 1;
-    numberDOM.innerText = rezultatas;
+function secondCick() {
+    if (skaicius % 2 === 0) {
+        console.log('vienas');
+    } else if (skaicius % 2 !== 0) {
+        console.log('du');
+        second.innerText = 'tūris';
+    }
 
-    // galima buvo rasyti = numberDOM.innerText = ++rezultatas
 }
 
-function resetClick() {
-    rezultatas = 0;
-    numberDOM.innerText = rezultatas;
-}
 
-minusDOM.addEventListener('click', minusClick);
-plusDOM.addEventListener('click', plusCick);
-resetDOM.addEventListener('click', resetClick);
+
+changeDOM.addEventListener('click', changeClick);
+secondDOM.addEventListener('click', secondCick);
+
