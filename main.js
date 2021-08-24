@@ -7,6 +7,7 @@ const changeDOM = document.querySelector(".change");
 const secondDOM = document.querySelector(".second");
 const ats = document.querySelector(".number");
 const second = document.querySelector(".second");
+const more = document.querySelector(".form8");
 
 
 
@@ -39,8 +40,11 @@ function secondCick() {
 
 }
 
+function moreClick() {
+    alert("More coming soon...")
+}
 
 
 changeDOM.addEventListener('click', changeClick);
 secondDOM.addEventListener('click', secondCick);
-
+more.addEventListener('click', moreClick);
