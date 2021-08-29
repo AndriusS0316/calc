@@ -1,4 +1,4 @@
-// calc uzduotis
+// calc tetraedro uzduotis
 
 let skaicius = 2;
 
